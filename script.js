@@ -1,3 +1,8 @@
+import apiKey from './api-key.js';
+
+const apiUrlPop = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`
+const apiUrlTv = `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`
+
 
 fetch(apiUrlPop)
     .then(response => response.json())
